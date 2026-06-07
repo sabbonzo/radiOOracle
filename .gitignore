@@ -1,0 +1,6 @@
+*secret*
+*cookie*
+*_keys.json
+.env
+__pycache__/
+*.bak

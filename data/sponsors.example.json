@@ -1,0 +1,16 @@
+{
+  "_doc": "Esempio di slot PIENO. Copia un blocco dentro slots.<nome> in sponsors.json per attivarlo.",
+  "advertise_url": "https://sabbonzo.gumroad.com",
+  "slots": {
+    "banner": {
+      "name": "Bar Centrale",
+      "text": "Il tuo aperitivo, ogni sera dalle 18.",
+      "url": "https://example.com",
+      "cta": "Vieni a trovarci",
+      "logo": null
+    },
+    "box1": null,
+    "box2": null,
+    "footer": null
+  }
+}

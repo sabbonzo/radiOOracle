@@ -1,0 +1,42 @@
+/* SPDX-License-Identifier: MIT */
+:root { color-scheme: light dark; --accent:#7c3aed; --line:#8884; }
+* { box-sizing: border-box; }
+body { font-family: system-ui,-apple-system,sans-serif; margin:0;
+       background:#0b0b12; color:#eee; line-height:1.5; }
+.hero { background:linear-gradient(135deg,#1a1030,#2a1a4a); padding:1.6rem 1rem; text-align:center; }
+.brand { font-size:1.8rem; font-weight:800; letter-spacing:.5px; }
+.tag { opacity:.7; font-size:.9rem; margin-top:.2rem; }
+main { max-width:880px; margin:1.2rem auto; padding:0 1rem; }
+
+.player { display:flex; align-items:center; gap:1rem;
+          background:#15131f; border:1px solid var(--line); border-radius:14px; padding:1rem 1.2rem; }
+.play { width:56px; height:56px; border-radius:50%; border:none; cursor:pointer;
+        background:var(--accent); color:#fff; font-size:1.3rem; flex:0 0 auto; }
+.play:hover { filter:brightness(1.1); }
+.onair { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; opacity:.6; }
+.track { font-size:1.05rem; font-weight:600; }
+
+.cols { display:grid; grid-template-columns:1fr; gap:1rem; margin-top:1.2rem; }
+@media (min-width:720px){ .cols { grid-template-columns:1fr 220px; } }
+.scaletta h2 { font-size:1.1rem; }
+.rows { list-style:none; padding:0; margin:0; }
+.rows li { display:flex; gap:.6rem; padding:.5rem 0; border-bottom:1px solid var(--line); }
+.rows .ix { opacity:.5; width:1.6rem; }
+.rows .ty { font-size:.72rem; text-transform:uppercase; opacity:.6; width:5rem; }
+.rows .ti { flex:1; }
+.rows .du { opacity:.6; font-variant-numeric:tabular-nums; }
+
+/* Spazi sponsor */
+.ad { border:1px dashed #8886; border-radius:12px; padding:1rem; text-align:center; }
+.ad-box { min-height:120px; display:flex; flex-direction:column; justify-content:center; margin-bottom:1rem; }
+.ad.filled { border-style:solid; border-color:var(--accent); }
+.ad .label { font-size:.68rem; text-transform:uppercase; letter-spacing:.08em; opacity:.5; }
+.ad .spn-name { font-weight:700; margin:.2rem 0; }
+.ad .spn-text { font-size:.9rem; opacity:.85; }
+.ad a.cta { display:inline-block; margin-top:.5rem; color:var(--accent); text-decoration:none; font-weight:600; }
+.ad img.logo { max-height:54px; max-width:100%; margin-bottom:.4rem; }
+
+footer { max-width:880px; margin:1.5rem auto; padding:0 1rem 2rem; }
+.ad-foot { margin-bottom:1rem; }
+.legal { opacity:.5; font-size:.8rem; }
+a { color:inherit; }

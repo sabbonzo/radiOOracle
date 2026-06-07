@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: MIT · radiOOracle — sito ascoltatori -->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSP: niente script di terzi, niente iframe nascosti, niente inline injection -->
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' https: data:; media-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>radiOOracle — la radio che non dorme mai</title>
+<link rel="stylesheet" href="assets/player.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand">📡 radiOOracle</div>
+    <div class="tag">notizie · musica · oracoli · 24/7</div>
+  </header>
+
+  <!-- Banner sponsor -->
+  <section id="ad-banner" class="ad" aria-label="Spazio sponsor"></section>
+
+  <main>
+    <section class="player">
+      <button id="play" class="play" aria-label="Play">▶</button>
+      <div class="meta">
+        <div id="onair" class="onair">In onda</div>
+        <div id="track" class="track">—</div>
+      </div>
+      <audio id="audio" src="audio/demo.mp3" preload="metadata"></audio>
+    </section>
+
+    <div class="cols">
+      <section class="scaletta">
+        <h2>Scaletta di oggi</h2>
+        <ul id="rows" class="rows"><li>Carico…</li></ul>
+      </section>
+
+      <aside class="rail" aria-label="Spazi sponsor">
+        <div id="ad-box1" class="ad ad-box"></div>
+        <div id="ad-box2" class="ad ad-box"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div id="ad-footer" class="ad ad-foot"></div>
+    <p class="legal">radiOOracle · spazi sponsor gestiti, senza script di terzi.
+      <a href="https://github.com/sabbonzo/radiOOracle-public" rel="noopener">progetto open source</a>
+    </p>
+  </footer>
+
+  <script src="assets/player.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "station": "radiOOracle",
+  "date": "2026-06-07",
+  "on_air": "dj Sab76",
+  "items": [
+    {
+      "n": 1,
+      "type": "intro",
+      "dj": "dj Sab76",
+      "title": "intro — dj Sab76",
+      "duration_s": 18
+    },
+    {
+      "n": 2,
+      "type": "music",
+      "dj": "dj Sab76",
+      "title": "Pocketful of Stars (v2)",
+      "duration_s": 159
+    },
+    {
+      "n": 3,
+      "type": "oracle",
+      "dj": "dj Sab76",
+      "title": "oracle — dj Sab76",
+      "duration_s": 45
+    },
+    {
+      "n": 4,
+      "type": "music",
+      "dj": "dj Sab76",
+      "title": "Vorrei per te (v1)",
+      "duration_s": 190
+    },
+    {
+      "n": 5,
+      "type": "music",
+      "dj": "dj Sab76",
+      "title": "Cronaca di Compleanni Secolari Leggendari (v1)",
+      "duration_s": 177
+    },
+    {
+      "n": 6,
+      "type": "signoff",
+      "dj": "dj Sab76",
+      "title": "signoff — dj Sab76",
+      "duration_s": 12
+    }
+  ],
+  "total_duration_s": 601
+}

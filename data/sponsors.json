@@ -1,0 +1,10 @@
+{
+  "_doc": "Spazi sponsor gestiti da te. Box vuoto = slot disponibile. Nessuno script di terzi: solo testo, logo (https) e link (https). Per affittare uno spazio l'inserzionista va su advertise_url.",
+  "advertise_url": "https://sabbonzo.gumroad.com",
+  "slots": {
+    "banner": null,
+    "box1": null,
+    "box2": null,
+    "footer": null
+  }
+}
