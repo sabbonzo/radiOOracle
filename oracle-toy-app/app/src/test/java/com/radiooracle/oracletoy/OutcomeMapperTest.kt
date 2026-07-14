@@ -10,40 +10,43 @@ import org.junit.Test
 class OutcomeMapperTest {
 
     @Test
-    fun correctAnswerProducesRewardPatternWithinCap() {
-        val steps = OutcomeMapper.map(
-            OracleVerdict(answer = "42", correct = true, confidence = 1.0),
-            intensityCap = 10,
-        )
-        assertTrue(steps.isNotEmpty())
-        assertTrue(steps.all { it.level <= 10 })
-        assertEquals(10, steps.first().level)
+    fun letterMapsToPulseCount() {
+        // A=1, B=2, C=3 -> each pulse is an (on, off) pair, so 2 steps per pulse.
+        assertEquals(1, OutcomeMapper.countForAnswer("A"))
+        assertEquals(2, OutcomeMapper.countForAnswer("B"))
+        assertEquals(3, OutcomeMapper.countForAnswer("c")) // case-insensitive
+        assertEquals(26, OutcomeMapper.countForAnswer("Z"))
+
+        val bPulses = OutcomeMapper.pulsesForAnswer("B", level = 10)
+        assertEquals(2 * 2, bPulses.size)                 // 2 pulses = 4 steps
+        assertEquals(2, bPulses.count { it.level > 0 })   // 2 "on" steps
     }
 
     @Test
-    fun wrongAnswerProducesNoPattern() {
-        val steps = OutcomeMapper.map(
-            OracleVerdict(answer = "wrong", correct = false, confidence = 0.9),
-        )
-        assertTrue(steps.isEmpty())
+    fun answerWithSurroundingTextStillReadsFirstLetter() {
+        // e.g. "Opzione C" -> the first letter is 'O' (15). Extracts first A..Z.
+        assertEquals('O' - 'A' + 1, OutcomeMapper.countForAnswer("Opzione C"))
     }
 
     @Test
-    fun confidenceScalesIntensityAndNeverExceedsMax() {
-        val steps = OutcomeMapper.map(
-            OracleVerdict(answer = "x", correct = true, confidence = 2.0), // out of range
-            intensityCap = ToyController.MAX_INTENSITY + 5,                 // out of range
-        )
+    fun pulseLevelNeverExceedsCap() {
+        val steps = OutcomeMapper.pulsesForAnswer("D", level = ToyController.MAX_INTENSITY + 5)
         assertTrue(steps.all { it.level <= ToyController.MAX_INTENSITY })
     }
 
     @Test
-    fun unknownCorrectnessProducesGentlePulse() {
+    fun noLetterOrZeroLevelProducesNoPattern() {
+        assertTrue(OutcomeMapper.pulsesForAnswer("123", level = 10).isEmpty())
+        assertTrue(OutcomeMapper.pulsesForAnswer("A", level = 0).isEmpty())
+    }
+
+    @Test
+    fun mapDelegatesToLetterPulses() {
         val steps = OutcomeMapper.map(
-            OracleVerdict(answer = "?", correct = null, confidence = 0.5),
+            OracleVerdict(answer = "A", correct = true, confidence = 1.0),
             intensityCap = 12,
         )
-        assertTrue(steps.isNotEmpty())
-        assertTrue(steps.first().level >= 1)
+        assertEquals(1 * 2, steps.size)   // A -> 1 pulse -> 2 steps
+        assertEquals(12, steps.first().level)
     }
 }

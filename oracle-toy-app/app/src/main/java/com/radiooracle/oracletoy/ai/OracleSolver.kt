@@ -69,9 +69,11 @@ class OracleSolver(
             .put("type", "text")
             .put(
                 "text",
-                "Risolvi il quiz/enigma mostrato nell'immagine. " +
-                    "Rispondi SOLO con un oggetto JSON di forma " +
-                    "{\"answer\": string, \"correct\": boolean|null, \"confidence\": number 0..1}. " +
+                "L'immagine mostra una domanda a scelta multipla con opzioni " +
+                    "etichettate A, B, C, ... Risolvila e indica la lettera dell'opzione " +
+                    "corretta. Rispondi SOLO con un oggetto JSON di forma " +
+                    "{\"answer\": \"<UNA sola lettera maiuscola A..Z>\", " +
+                    "\"correct\": boolean|null, \"confidence\": number 0..1}. " +
                     "Nessun altro testo.",
             )
         val content = JSONArray().put(imageBlock).put(textBlock)

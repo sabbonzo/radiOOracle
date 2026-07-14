@@ -28,7 +28,7 @@ scansione GATT (es. nRF Connect) e aggiornare `WRITE_CHAR_UUID` in
 |---|---|
 | `camera/CameraController.kt` | CameraX: anteprima + cattura di un frame JPEG |
 | `ai/OracleSolver.kt` | POST all'API Claude (immagine base64 + `output_config.format`) → `{answer, correct, confidence}` |
-| `logic/OutcomeMapper.kt` | esito → pattern del toy (puro, testato) |
+| `logic/OutcomeMapper.kt` | lettera della risposta → N pulsazioni (A=1, B=2, … Z=26), all'intensità impostata; puro e testato |
 | `toy/ToyController.kt` | interfaccia; `LovenseBleController` (BLE reale) + `MockToyController` (dry-run) |
 | `ui/OracleViewModel.kt`, `ui/MainScreen.kt` | consenso, STOP, cap, loop capture→solve→drive |
 
