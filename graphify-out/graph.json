@@ -1,0 +1,298 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "player.js",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "player.js",
+      "id": "assets_player"
+    },
+    {
+      "label": "fmt()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "fmt()",
+      "id": "assets_player_fmt"
+    },
+    {
+      "label": "getJSON()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "getjson()",
+      "id": "assets_player_getjson"
+    },
+    {
+      "label": "safeLink()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "safelink()",
+      "id": "assets_player_safelink"
+    },
+    {
+      "label": "safeLogo()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "safelogo()",
+      "id": "assets_player_safelogo"
+    },
+    {
+      "label": "renderSlot()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "renderslot()",
+      "id": "assets_player_renderslot"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "init()",
+      "id": "assets_player_init"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "norm_label": "readme.md",
+      "id": "readme"
+    },
+    {
+      "label": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "norm_label": "\ud83d\udce1 radiooracle \u2014 sito ascoltatori",
+      "id": "readme_radiooracle_sito_ascoltatori"
+    },
+    {
+      "label": "Spazi pubblicitari sicuri",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "norm_label": "spazi pubblicitari sicuri",
+      "id": "readme_spazi_pubblicitari_sicuri"
+    },
+    {
+      "label": "Aggiornare la scaletta",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "norm_label": "aggiornare la scaletta",
+      "id": "readme_aggiornare_la_scaletta"
+    },
+    {
+      "label": "Privacy",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "norm_label": "privacy",
+      "id": "readme_privacy"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_fmt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_getjson"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_init"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_renderslot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_safelink"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_safelogo"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player_init",
+      "target": "assets_player_fmt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player_init",
+      "target": "assets_player_getjson"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player_renderslot",
+      "target": "assets_player_safelink"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player_renderslot",
+      "target": "assets_player_safelogo"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "assets_player_init",
+      "target": "assets_player_renderslot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "readme_radiooracle_sito_ascoltatori"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_radiooracle_sito_ascoltatori",
+      "target": "readme_aggiornare_la_scaletta"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_radiooracle_sito_ascoltatori",
+      "target": "readme_privacy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_radiooracle_sito_ascoltatori",
+      "target": "readme_spazi_pubblicitari_sicuri"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "5a0d5c27a5ffa46ce1057efe230b7804e054bdb6"
+}
