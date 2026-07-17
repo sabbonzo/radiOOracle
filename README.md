@@ -12,6 +12,11 @@ Statico, gratis (GitHub Pages), senza script di terzi.
 
 ## Aggiornare la scaletta
 `data/scaletta.json` è esportato dal motore locale (titoli reali, nessun path/dato privato).
+Ogni brano può avere un campo opzionale `suno_url` (solo https) che mostra il pulsante "🎵 Suno" nella riga.
+
+## Canali ufficiali (YouTube / Suno / …)
+`data/links.json` elenca i canali: compila `url` (solo https) per far comparire il pulsante
+nell'header. `url` vuoto = pulsante nascosto. Nessuno script di terzi, solo link.
 
 ## Privacy
 Online vanno solo titoli pubblici e contenuti promozionali. Mai path, email, cookie o dati personali.

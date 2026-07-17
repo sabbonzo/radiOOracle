@@ -1,0 +1,84 @@
+{
+  "communities": {
+    "0": [
+      "assets_player",
+      "assets_player_fmt",
+      "assets_player_getjson",
+      "assets_player_init",
+      "assets_player_renderslot",
+      "assets_player_safelink",
+      "assets_player_safelogo"
+    ],
+    "1": [
+      "readme",
+      "readme_aggiornare_la_scaletta",
+      "readme_privacy",
+      "readme_radiooracle_sito_ascoltatori",
+      "readme_spazi_pubblicitari_sicuri"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5238095238095238,
+    "1": 0.4
+  },
+  "gods": [
+    {
+      "id": "assets_player_renderslot",
+      "label": "renderSlot()",
+      "degree": 4
+    },
+    {
+      "id": "assets_player_init",
+      "label": "init()",
+      "degree": 4
+    },
+    {
+      "id": "readme_radiooracle_sito_ascoltatori",
+      "label": "📡 radiOOracle — sito ascoltatori",
+      "degree": 4
+    },
+    {
+      "id": "assets_player_fmt",
+      "label": "fmt()",
+      "degree": 2
+    },
+    {
+      "id": "assets_player_getjson",
+      "label": "getJSON()",
+      "degree": 2
+    },
+    {
+      "id": "assets_player_safelink",
+      "label": "safeLink()",
+      "degree": 2
+    },
+    {
+      "id": "assets_player_safelogo",
+      "label": "safeLogo()",
+      "degree": 2
+    },
+    {
+      "id": "readme_spazi_pubblicitari_sicuri",
+      "label": "Spazi pubblicitari sicuri",
+      "degree": 1
+    },
+    {
+      "id": "readme_aggiornare_la_scaletta",
+      "label": "Aggiornare la scaletta",
+      "degree": 1
+    },
+    {
+      "id": "readme_privacy",
+      "label": "Privacy",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Spazi pubblicitari sicuri`, `Aggiornare la scaletta`, `Privacy` to the rest of the system?",
+      "why": "3 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
