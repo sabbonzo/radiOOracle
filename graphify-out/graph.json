@@ -9,10 +9,10 @@
       "source_file": "assets/player.js",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "assets_player",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "player.js",
-      "id": "assets_player"
+      "norm_label": "player.js"
     },
     {
       "label": "fmt()",
@@ -20,10 +20,10 @@
       "source_file": "assets/player.js",
       "source_location": "L5",
       "_origin": "ast",
+      "id": "assets_player_fmt",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "fmt()",
-      "id": "assets_player_fmt"
+      "norm_label": "fmt()"
     },
     {
       "label": "getJSON()",
@@ -31,10 +31,10 @@
       "source_file": "assets/player.js",
       "source_location": "L7",
       "_origin": "ast",
+      "id": "assets_player_getjson",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "getjson()",
-      "id": "assets_player_getjson"
+      "norm_label": "getjson()"
     },
     {
       "label": "safeLink()",
@@ -42,10 +42,10 @@
       "source_file": "assets/player.js",
       "source_location": "L14",
       "_origin": "ast",
+      "id": "assets_player_safelink",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "safelink()",
-      "id": "assets_player_safelink"
+      "norm_label": "safelink()"
     },
     {
       "label": "safeLogo()",
@@ -53,10 +53,10 @@
       "source_file": "assets/player.js",
       "source_location": "L25",
       "_origin": "ast",
+      "id": "assets_player_safelogo",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "safelogo()",
-      "id": "assets_player_safelogo"
+      "norm_label": "safelogo()"
     },
     {
       "label": "renderSlot()",
@@ -64,21 +64,32 @@
       "source_file": "assets/player.js",
       "source_location": "L33",
       "_origin": "ast",
+      "id": "assets_player_renderslot",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "renderslot()",
-      "id": "assets_player_renderslot"
+      "norm_label": "renderslot()"
+    },
+    {
+      "label": "renderChannels()",
+      "file_type": "code",
+      "source_file": "assets/player.js",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "assets_player_renderchannels",
+      "community": 0,
+      "community_name": "player.js",
+      "norm_label": "renderchannels()"
     },
     {
       "label": "init()",
       "file_type": "code",
       "source_file": "assets/player.js",
-      "source_location": "L56",
+      "source_location": "L68",
       "_origin": "ast",
+      "id": "assets_player_init",
       "community": 0,
       "community_name": "player.js",
-      "norm_label": "init()",
-      "id": "assets_player_init"
+      "norm_label": "init()"
     },
     {
       "label": "README.md",
@@ -86,10 +97,10 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "readme",
       "community": 1,
       "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
-      "norm_label": "readme.md",
-      "id": "readme"
+      "norm_label": "readme.md"
     },
     {
       "label": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
@@ -97,10 +108,10 @@
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "readme_radiooracle_sito_ascoltatori",
       "community": 1,
       "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
-      "norm_label": "\ud83d\udce1 radiooracle \u2014 sito ascoltatori",
-      "id": "readme_radiooracle_sito_ascoltatori"
+      "norm_label": "\ud83d\udce1 radiooracle \u2014 sito ascoltatori"
     },
     {
       "label": "Spazi pubblicitari sicuri",
@@ -108,10 +119,10 @@
       "source_file": "README.md",
       "source_location": "L6",
       "_origin": "ast",
+      "id": "readme_spazi_pubblicitari_sicuri",
       "community": 1,
       "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
-      "norm_label": "spazi pubblicitari sicuri",
-      "id": "readme_spazi_pubblicitari_sicuri"
+      "norm_label": "spazi pubblicitari sicuri"
     },
     {
       "label": "Aggiornare la scaletta",
@@ -119,21 +130,32 @@
       "source_file": "README.md",
       "source_location": "L13",
       "_origin": "ast",
+      "id": "readme_aggiornare_la_scaletta",
       "community": 1,
       "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
-      "norm_label": "aggiornare la scaletta",
-      "id": "readme_aggiornare_la_scaletta"
+      "norm_label": "aggiornare la scaletta"
+    },
+    {
+      "label": "Canali ufficiali (YouTube / Suno / \u2026)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "readme_canali_ufficiali_youtube_suno",
+      "community": 1,
+      "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
+      "norm_label": "canali ufficiali (youtube / suno / ...)"
     },
     {
       "label": "Privacy",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L16",
+      "source_location": "L21",
       "_origin": "ast",
+      "id": "readme_privacy",
       "community": 1,
       "community_name": "\ud83d\udce1 radiOOracle \u2014 sito ascoltatori",
-      "norm_label": "privacy",
-      "id": "readme_privacy"
+      "norm_label": "privacy"
     }
   ],
   "links": [
@@ -143,9 +165,9 @@
       "source_file": "assets/player.js",
       "source_location": "L5",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player",
-      "target": "assets_player_fmt"
+      "target": "assets_player_fmt",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -153,19 +175,29 @@
       "source_file": "assets/player.js",
       "source_location": "L7",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player",
-      "target": "assets_player_getjson"
+      "target": "assets_player_getjson",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "assets/player.js",
-      "source_location": "L56",
+      "source_location": "L68",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player",
-      "target": "assets_player_init"
+      "target": "assets_player_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "assets_player",
+      "target": "assets_player_renderchannels",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -173,9 +205,9 @@
       "source_file": "assets/player.js",
       "source_location": "L33",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player",
-      "target": "assets_player_renderslot"
+      "target": "assets_player_renderslot",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -183,9 +215,9 @@
       "source_file": "assets/player.js",
       "source_location": "L14",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player",
-      "target": "assets_player_safelink"
+      "target": "assets_player_safelink",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -193,31 +225,53 @@
       "source_file": "assets/player.js",
       "source_location": "L25",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player",
-      "target": "assets_player_safelogo"
+      "target": "assets_player_safelogo",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "assets/player.js",
-      "source_location": "L79",
+      "source_location": "L95",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player_init",
-      "target": "assets_player_fmt"
+      "target": "assets_player_fmt",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "assets/player.js",
-      "source_location": "L58",
+      "source_location": "L70",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player_init",
-      "target": "assets_player_getjson"
+      "target": "assets_player_getjson",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "assets_player_init",
+      "target": "assets_player_safelink",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "assets_player_renderchannels",
+      "target": "assets_player_safelink",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -226,9 +280,9 @@
       "source_file": "assets/player.js",
       "source_location": "L41",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player_renderslot",
-      "target": "assets_player_safelink"
+      "target": "assets_player_safelink",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -237,20 +291,31 @@
       "source_file": "assets/player.js",
       "source_location": "L47",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player_renderslot",
-      "target": "assets_player_safelogo"
+      "target": "assets_player_safelogo",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "assets/player.js",
-      "source_location": "L61",
+      "source_location": "L77",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "assets_player_init",
-      "target": "assets_player_renderslot"
+      "target": "assets_player_renderslot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/player.js",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "assets_player_init",
+      "target": "assets_player_renderchannels",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -258,9 +323,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_radiooracle_sito_ascoltatori"
+      "target": "readme_radiooracle_sito_ascoltatori",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -268,19 +333,29 @@
       "source_file": "README.md",
       "source_location": "L13",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme_radiooracle_sito_ascoltatori",
-      "target": "readme_aggiornare_la_scaletta"
+      "target": "readme_aggiornare_la_scaletta",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme_radiooracle_sito_ascoltatori",
-      "target": "readme_privacy"
+      "target": "readme_canali_ufficiali_youtube_suno",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "readme_radiooracle_sito_ascoltatori",
+      "target": "readme_privacy",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -288,11 +363,11 @@
       "source_file": "README.md",
       "source_location": "L6",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "readme_radiooracle_sito_ascoltatori",
-      "target": "readme_spazi_pubblicitari_sicuri"
+      "target": "readme_spazi_pubblicitari_sicuri",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5a0d5c27a5ffa46ce1057efe230b7804e054bdb6"
+  "built_at_commit": "5a3a51a7b9c4db4dde5d1b205feff060a69a6cef"
 }
