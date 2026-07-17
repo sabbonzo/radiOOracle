@@ -1,0 +1,9 @@
+{
+  "note": "Canali ufficiali radiOOracle — solo URL https. Compila 'url' per attivare il pulsante; url vuoto = canale nascosto.",
+  "channels": [
+    { "id": "youtube", "label": "YouTube", "icon": "▶️", "url": "" },
+    { "id": "suno",    "label": "Suno",    "icon": "🎵", "url": "" },
+    { "id": "spotify", "label": "Spotify", "icon": "🎧", "url": "" },
+    { "id": "telegram","label": "Telegram","icon": "📣", "url": "" }
+  ]
+}

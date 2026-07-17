@@ -26,6 +26,13 @@ main { max-width:880px; margin:1.2rem auto; padding:0 1rem; }
 .rows .ti { flex:1; }
 .rows .du { opacity:.6; font-variant-numeric:tabular-nums; }
 
+/* Canali ufficiali (YouTube / Suno / …) */
+.channels { margin-top:.8rem; display:flex; gap:.5rem; justify-content:center; flex-wrap:wrap; }
+a.chip { display:inline-block; padding:.3rem .8rem; border:1px solid var(--line); border-radius:999px;
+         font-size:.85rem; font-weight:600; text-decoration:none; background:#ffffff12; }
+a.chip:hover { border-color:var(--accent); color:#fff; }
+a.chip-mini { padding:.05rem .5rem; font-size:.72rem; font-weight:500; align-self:center; }
+
 /* Spazi sponsor */
 .ad { border:1px dashed #8886; border-radius:12px; padding:1rem; text-align:center; }
 .ad-box { min-height:120px; display:flex; flex-direction:column; justify-content:center; margin-bottom:1rem; }

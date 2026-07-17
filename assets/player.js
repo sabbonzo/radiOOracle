@@ -51,9 +51,25 @@ function renderSlot(el, sponsor) {
   if (sponsor.url) el.appendChild(safeLink(sponsor.url, sponsor.cta || "Scopri"));
 }
 
+// pulsanti canali ufficiali (YouTube, Suno, …): solo https, niente url = niente pulsante
+function renderChannels(el, channels) {
+  if (!el || !Array.isArray(channels)) return;
+  el.textContent = "";
+  for (const ch of channels) {
+    if (!ch || typeof ch.url !== "string" || !ch.url.startsWith("https://")) continue;
+    const a = safeLink(ch.url, `${ch.icon || ""} ${ch.label || ch.id || "Canale"}`.trim());
+    a.className = "chip";
+    el.appendChild(a);
+  }
+}
+
 let EMPTY_CTA = "#";
 
 async function init() {
+  // canali ufficiali
+  const lk = await getJSON("data/links.json") || {};
+  renderChannels(document.getElementById("channels"), lk.channels);
+
   // sponsor
   const sp = await getJSON("data/sponsors.json") || {};
   EMPTY_CTA = (typeof sp.advertise_url === "string" && sp.advertise_url.startsWith("https://")) ? sp.advertise_url : "#";
@@ -77,7 +93,13 @@ async function init() {
       const ty = document.createElement("span"); ty.className = "ty"; ty.textContent = it.type;
       const ti = document.createElement("span"); ti.className = "ti"; ti.textContent = it.title || "";
       const du = document.createElement("span"); du.className = "du"; du.textContent = fmt(it.duration_s || 0);
-      li.append(ix, ty, ti, du); rows.appendChild(li);
+      li.append(ix, ty, ti);
+      // link opzionale alla traccia su Suno (stessa validazione https di safeLink)
+      if (typeof it.suno_url === "string" && it.suno_url.startsWith("https://")) {
+        const su = safeLink(it.suno_url, "🎵 Suno"); su.className = "chip chip-mini";
+        li.appendChild(su);
+      }
+      li.appendChild(du); rows.appendChild(li);
     }
   } else {
     rows.textContent = "Scaletta non disponibile.";
