@@ -1,0 +1,56 @@
+name: Build Oracle Toy APK
+
+on:
+  push:
+    branches:
+      - claude/lovense-reverse-engineering-3q1lo8
+    paths:
+      - "oracle-toy-app/**"
+      - ".github/workflows/android-build.yml"
+  pull_request:
+    paths:
+      - "oracle-toy-app/**"
+      - ".github/workflows/android-build.yml"
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: oracle-toy-app
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      # The repo ships no Gradle wrapper, so generate one pinned to a version
+      # compatible with Android Gradle Plugin 8.5 (the runner has `gradle`).
+      - name: Generate Gradle wrapper
+        run: gradle wrapper --gradle-version 8.7
+
+      - name: Run unit tests
+        run: ./gradlew :app:testDebugUnitTest --stacktrace
+        env:
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+
+      - name: Build debug APK
+        run: ./gradlew :app:assembleDebug --stacktrace
+        env:
+          CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oracle-toy-debug-apk
+          path: oracle-toy-app/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
